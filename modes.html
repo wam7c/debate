@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>modes of a correct reason</title>
+<link rel="stylesheet" type="text/css" href="debate.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<script type="text/javascript">
+function enterReason(){
+	var formInput = document.getElementById('reasonInput').value;
+	document.getElementById('reasonText').innerHTML = formInput;
+    document.getElementById('reasonText2').innerHTML = formInput;
+    document.getElementById('reasonText3').innerHTML = formInput;
+    document.getElementById('reasonText4').innerHTML = formInput;
+}
+function enterPredicate(){
+	var formInput = document.getElementById('predicateInput').value;
+	document.getElementById('predicateText').innerHTML = formInput;
+    document.getElementById('predicateText2').innerHTML = formInput;
+    document.getElementById('predicateText3').innerHTML = formInput;
+    document.getElementById('predicateText4').innerHTML = formInput;
+}
+function enterSubject(){
+	var formInput = document.getElementById('subjectInput').value;
+	document.getElementById('subjectText').innerHTML = formInput;
+    document.getElementById('subjectText2').innerHTML = formInput;
+}
+</script>
+<body>
+<div id="content"><iframe name="content" src="terms/start.html" width="338px" height="290"></iframe></div>
+<div id="diploma">
+           <ul>
+                <li><a href="existent.html" target="content"> existent </a></li>
+
+                <li><a href="terms/object-knowledge.html" target="content"> object of knowledge </a></li>
+                <li><a href="terms/established-base.html" target="content"> established base </a></li>
+                <li><a href="terms/permanent.html" target="content"> permanent phenomenon </a></li>
+                <li><a href="terms/impermanent.html" target="content"> impermanent phenomenon</a></li>
+                <li><a href="terms/thing.html" target="content"> functioning thing </a></li>
+                <li><a href="terms/form.html" target="content"> form </a></li>
+                <li><a href="terms/matter.html" target="content"> matter </a></li>
+                <li><a href="terms/tangible.html" target="content"> tangible object </a></li>               
+                <li><a href="terms/earth.html" target="content"> earth </a></li>
+                <li><a href="terms/fire.html" target="content"> fire </a></li>
+                <li><a href="terms/water.html" target="content"> water </a></li>
+                <li><a href="terms/wind.html" target="content"> wind </a></li>
+                
+                
+                <li><a href="terms/consciousness.html" target="content"> consciousness </a></li>
+
+                <li><a href="terms/comp-factors.html" target="content"> non-associated compositional factor </a></li>
+                
+                <li><a href="terms/spec-char.html" target="content"> specifically-characterized phenomena </a></li>
+                <li><a href="terms/gen-char.html" target="content"> generally-characterized phenomena </a></li>                
+                
+                
+                <li><a href="terms/same.html" target="content"> phenomena that are same </a></li>
+                <li><a href="terms/different.html" target="content"> phenomena that are different </a></li>
+                <li><a href="terms/valid.html" target="content"> valid cognition </a></li>
+                
+           </ul>
+     <p><a href="index.html">Back home</a></p>      
+           
+</div>
+<div id="vennbody">
+<h2 align="center">Analyzing a Syllogism: The Three Modes of a Correct Reason<br></h2>
+
+
+<div class="static">
+	
+	
+<p align="left">Step 1: Enter elements of syllogism: subject, predicate, and reason<br>(for instance, "sound", "impermanent", and "product")</p>
+
+<div class="consequence">
+<input type='text' id='subjectInput' value='' />
+<input type='button' onclick='enterSubject()' value="Submit Subject" />
+
+<input type='text' id='predicateInput' value='' />
+<input type='button' onclick='enterPredicate()' value="Submit Predicate" />
+
+<input type='text' id='reasonInput' value='' />
+<input type='button' onclick='enterReason()' value="Submit Reason" />
+
+<div class="subject"><p><span id='subjectText'></span> </p></div>
+<div class="isa"><p class="T31">IS</p></div>
+<div id='newhide' class="predicate"><p><span id='predicateText'></span> </p></div>
+<div class="because"><p class="T31">BECAUSE<BR>IT IS</p></div>
+<div class="reason"><p><span id='reasonText'></span> </p></div>
+
+</div>
+
+
+
+
+<div class="static2" id='reveal'>
+<p align="left">Step 2. Ascertain that the Reason is a Quality of the Subject:</p> 
+
+<p align="center">The subject, [<span id='subjectText2'></span>] is [<span id='reasonText2'></span>]. </p> 
+
+
+<p align="left">Step 3: Determine whether the Forward and Reverse Entailments are Valid:</p>
+<div class="circlebig">Forward</div>
+<div class="circlesmall"></div>
+<div class="outside"><p><span id='predicateText2'></span> </p> </div>
+<div class="inside"><p><span id='reasonText3'></span> </p></div>
+
+<div class="circlebigRP">Reverse</div>
+<div class="circlesmallRP"></div>
+<div class="outsideRP"><p>NOT <span id='reasonText4'></span> </p> </div>
+<div class="insideRP"><p>NOT <span id='predicateText3'></span> </p></div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</body></html>
+
+
+

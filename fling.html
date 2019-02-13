@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Fling An Absurd Consequence</title>
+<link rel="stylesheet" type="text/css" href="debate.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<script type="text/javascript">
+function enterOuter(){
+	var formInput = document.getElementById('outInput').value;
+	document.getElementById('outerText').innerHTML = formInput;
+    document.getElementById('outerText2').innerHTML = formInput;
+    document.getElementById('outerText3').innerHTML = formInput;
+}
+function enterInner(){
+	var formInput = document.getElementById('inInput').value;
+	document.getElementById('innerText').innerHTML = formInput;
+    document.getElementById('innerText2').innerHTML = formInput;
+    document.getElementById('innerText3').innerHTML = formInput;
+}
+function enterSubject(){
+	var formInput = document.getElementById('subjectInput').value;
+	document.getElementById('subjectText').innerHTML = formInput;
+    document.getElementById('subjectText2').innerHTML = formInput;
+}
+</script>
+<body>
+<div id="content"><iframe name="content" src="terms/start.html" width="338px" height="290"></iframe></div>
+<div id="diploma">
+           <ul>
+                <li><a href="terms/existent.html" target="content"> existent </a></li>
+
+                <li><a href="terms/object-knowledge.html" target="content"> object of knowledge </a></li>
+                <li><a href="terms/established-base.html" target="content"> established base </a></li>
+                <li><a href="terms/permanent.html" target="content"> permanent phenomenon </a></li>
+                <li><a href="terms/impermanent.html" target="content"> impermanent phenomenon</a></li>
+                <li><a href="terms/thing.html" target="content"> functioning thing </a></li>
+                <li><a href="terms/form.html" target="content"> form </a></li>
+                <li><a href="terms/matter.html" target="content"> matter </a></li>
+                <li><a href="terms/tangible.html" target="content"> tangible object </a></li>               
+                <li><a href="terms/earth.html" target="content"> earth </a></li>
+                <li><a href="terms/fire.html" target="content"> fire </a></li>
+                <li><a href="terms/water.html" target="content"> water </a></li>
+                <li><a href="terms/wind.html" target="content"> wind </a></li>
+                
+                
+                <li><a href="terms/consciousness.html" target="content"> consciousness </a></li>
+
+                <li><a href="terms/comp-factors.html" target="content"> non-associated compositional factor </a></li>
+                
+                <li><a href="terms/spec-char.html" target="content"> specifically-characterized phenomena </a></li>
+                <li><a href="terms/gen-char.html" target="content"> generally-characterized phenomena </a></li>                
+                
+                
+                <li><a href="terms/same.html" target="content"> phenomena that are same </a></li>
+                <li><a href="terms/different.html" target="content"> phenomena that are different </a></li>
+                <li><a href="terms/valid.html" target="content"> valid cognition </a></li>
+               
+           </ul>
+           
+           <p><a href="index.html">Back home</a></p>
+           
+</div>
+<div id="vennbodyfl">
+<h2 align="center">Refuting An Opponent's Incorrect Entailment<br></h2>
+<h3 align="center">Step 1. Enter Opponent's Incorrect Entailment<br>(for instance, outer value 'form', inner value 'existent')</h2>
+
+<div class="static3">
+
+<div class="outerset">
+<input type='text' id='outInput' value='' />
+<input type='button' onclick='enterOuter()' value='Submit Outer Value'/>
+</div>
+
+<div class="innerset">
+<input type='text' id='inInput' value='' />
+<input type='button' onclick='enterInner()' value='Submit Inner Value'/>
+</div>
+
+
+<div class="circlebigfl"></div>
+<div class="circlesmallfl"></div>
+<div class="outsidefl"><p><span id='outerText'></span> </p> </div>
+<div class="insidefl"><p><span id='innerText'></span> </p></div>
+
+
+</div>
+
+<div class="static4" id='reveal'>
+
+<h3 align="center">Step 2. Fling Absurd Consequence of Incorrect Entailment:<br>
+assert a subject that is [<span id='innerText3'></span>] but is not [<span id='outerText3'></span>].</h2>
+
+<div class="consequencefl">
+<input type='text' id='subjectInput' value='' />
+<input type='button' onclick='enterSubject()' value="Submit Subject" />
+
+<div class="subjectfl"><p><span id='subjectText'></span> </p></div>
+<div class="isafl"><p class="T31">IS</p></div>
+<div id='newhide' class="predicate"><p><span id='outerText2'></span> </p></div>
+<div class="becausefl"><p class="T31">BECAUSE<BR>IT IS</p></div>
+<div class="reasonfl"><p><span id='innerText2'></span> </p></div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</body></html>
+
+
+
