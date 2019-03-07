@@ -26,6 +26,202 @@ function enterSubject(){
     document.getElementById('subjectText2').innerHTML = formInput;
 }
 </script>
+<style>
+  input[type=button] {
+  width: 8.6em;  height: 2.0em;
+}
+p.TPblack {
+  color: black;
+  font-size: 18pt;
+}
+p.TPwhite {
+  color: white;
+  font-size: 18pt;
+}
+div.static {
+  position: relative;
+  left: 80px;
+  height: 400px;
+}
+
+div.static2 {
+  position: relative;
+  left: 0px;
+  height: 500px;
+  top: 250px;
+  width:850px;
+  border:none;
+}
+
+div.static3 {
+  position: relative;
+  left: 0px;
+  height: 400px;
+}
+
+div.static4 {
+  position: relative;
+  left: 0px;
+  height: 500px;
+}
+.inside {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:225px;
+    top:-312px;
+    background-color:blue;
+}
+.outside {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:225px;
+    top:-420px;
+    background-color:green;
+}
+.circlebig {
+	position:relative;
+    background-color:green;
+    border:1px solid red;    
+    height:300px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:300px;
+    left:100px;
+    top:20px;
+}
+.circlesmall {
+	position:relative;
+	left:164px;
+    background-color:blue;
+    border:1px solid red;    
+    height:175px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:175px;
+    top:-180px;
+}
+.insideRP {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:625px;
+    top:-910px;
+    background-color:green;
+}
+.outsideRP {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:625px;
+    top:-1000px;
+    background-color:blue;
+}
+.circlebigRP {
+	position:relative;
+    background-color:blue;
+    border:1px solid red;    
+    height:300px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:300px;
+    left:500px;
+    top:-540px;
+}
+.circlesmallRP {
+	position:relative;
+	left:564px;
+    background-color:green;
+    border:1px solid red;    
+    height:175px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:175px;
+    top:-760px;
+}
+.consequence {
+	position:absolute;
+	background-color: Gray;
+    height:200px;
+    width:978px;
+    left:0px;
+    top:75px;
+}
+.subject {
+	position:relative;
+    background-color: Gray;
+    height:75px;
+    width:250px;
+    left:15px;
+    top:40px;
+    border:none;
+}
+.isa {
+	position:relative;
+	background-color: Gray;
+    height:75px;
+    width:30px;
+    left:240px;
+    top:-40px;
+    border:none;
+}
+.predicate {
+	position:relative;
+	background-color:gray;
+    height:75px;
+    width:200px;
+    left:335px;
+    top:-160px;
+    border:none;
+}
+.because {
+	position:relative;
+	background-color: gray;
+    height:90px;
+    width:40px;
+    left:555px;
+    top:-260px;
+}
+.reason {
+	position:relative;
+	background-color:gray;
+    height:75px;
+    width:190px;
+    left:675px;
+    top:-360px;
+    border:none;
+}
+#diploma {
+  position: absolute;
+  top: 320px;
+  left: 60px;
+  width: 340px;
+  height: 510px;
+}
+
+#content {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  width: 340px;
+  height: 290px;
+}
+
+#vennbody {
+  position: absolute;
+  top: 20px;
+  left: 420px;
+  width: 880px;
+  height: 810px;
+  background-color: #000033;
+}
+
+</style>
 <body>
 <div id="content"><iframe name="content" src="terms/start.html" width="338px" height="290"></iframe></div>
 <div id="diploma">
@@ -74,18 +270,17 @@ function enterSubject(){
 <div class="consequence">
 <input type='text' id='subjectInput' value='' />
 <input type='button' onclick='enterSubject()' value="Submit Subject" />
-
 <input type='text' id='predicateInput' value='' />
 <input type='button' onclick='enterPredicate()' value="Submit Predicate" />
 
 <input type='text' id='reasonInput' value='' />
 <input type='button' onclick='enterReason()' value="Submit Reason" />
 
-<div class="subject"><p><span id='subjectText'></span> </p></div>
+<div class="subject"><p class="TPblack"><span id='subjectText'></span> </p></div>
 <div class="isa"><p class="T31">IS</p></div>
-<div id='newhide' class="predicate"><p><span id='predicateText'></span> </p></div>
+<div id='newhide' class="predicate"><p  class="TPblack"><span id='predicateText'></span> </p></div>
 <div class="because"><p class="T31">BECAUSE<BR>IT IS</p></div>
-<div class="reason"><p><span id='reasonText'></span> </p></div>
+<div class="reason"><p class="TPblack"><span id='reasonText'></span> </p></div>
 
 </div>
 
@@ -95,19 +290,19 @@ function enterSubject(){
 <div class="static2" id='reveal'>
 <p align="left">Step 2. Ascertain that the Reason is a Quality of the Subject:</p> 
 
-<p align="center">The subject, [<span id='subjectText2'></span>] is [<span id='reasonText2'></span>]. </p> 
+<p  class="TPwhite" align="center">The subject, [<span id='subjectText2' style="color:white" ></span>] is [<span id='reasonText2'></span>]. </p> 
 
 
-<p align="left">Step 3: Determine whether the Forward and Reverse Entailments are Valid:</p>
+<p align="left">Step 3: Determine whether the Forward and Reverse Pervasions are Valid:</p>
 <div class="circlebig">Forward</div>
 <div class="circlesmall"></div>
-<div class="outside"><p><span id='predicateText2'></span> </p> </div>
-<div class="inside"><p><span id='reasonText3'></span> </p></div>
+<div class="outside"><p class="TPwhite"><span id='predicateText2'></span> </p> </div>
+<div class="inside"><p class="TPwhite"><span id='reasonText3'></span> </p></div>
 
 <div class="circlebigRP">Reverse</div>
 <div class="circlesmallRP"></div>
-<div class="outsideRP"><p>NOT <span id='reasonText4'></span> </p> </div>
-<div class="insideRP"><p>NOT <span id='predicateText3'></span> </p></div>
+<div class="outsideRP"><p class="TPwhite">NOT <span id='reasonText4'></span> </p> </div>
+<div class="insideRP"><p class="TPwhite">NOT <span id='predicateText3'></span> </p></div>
 
 
 

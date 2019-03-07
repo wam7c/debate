@@ -24,6 +24,148 @@ function enterSubject(){
     document.getElementById('subjectText2').innerHTML = formInput;
 }
 </script>
+<style>
+  input[type=button] {
+  width: 11em;  height: 2em;
+}
+p.TPblack {
+  color: black;
+  font-size: 24pt;
+}
+p.TPwhite {
+  color: white;
+  font-size: 24pt;
+}
+.insidefl {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:590px;
+    top:-360px;
+    background-color:blue;
+}
+.outsidefl {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:590px;
+    top:-420px;
+    background-color:green;
+}
+.circlebigfl {
+	position:relative;
+    background-color:green;
+    border:1px solid red;    
+    height:300px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:300px;
+    left:500px;
+    top:40px;
+}
+.circlesmallfl {
+	position:relative;
+	left:564px;
+    background-color:blue;
+    border:1px solid red;    
+    height:175px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:175px;
+    top:-160px;
+}
+.outerset {
+	position:absolute;
+	background-color:#000033;
+    height:40px;
+    width:175px;
+    left:200px;
+    top:110px;
+    border:none;
+}
+.innerset {
+	position:absolute;
+	background-color:#000033;
+    height:40px;
+    width:175px;
+    left:200px;
+    top:200px;
+    border:none;
+}
+
+.correctornot {
+	position:absolute;
+	background-color:#fff;
+    height:100px;
+    width:300px;
+    left:480px;
+    top:160px;
+}
+
+.consequencefl {
+	position:absolute;
+	background-color:gray;
+    border: 3px solid #73AD21;
+    height:200px;
+    width:878px;
+    left:0px;
+    top:100px;
+}
+.subjectfl {
+	position:relative;
+    background-color: #000033;
+    border: 1px solid white;
+    height:75px;
+    width:250px;
+    left:15px;
+    top:40px;
+}
+.isafl {
+	position:relative;
+	background-color:gray;
+    height:75px;
+    width:30px;
+    left:280px;
+    top:-40px;
+}
+.predicatefl {
+	position:relative;
+	background-color:green;
+    border: 1px solid white;
+    height:75px;
+    width:200px;
+    left:335px;
+    top:-130px;
+}
+.becausefl {
+	position:relative;
+	background-color:gray;
+    height:90px;
+    width:40px;
+    left:555px;
+    top:-200px;
+}
+.reasonfl {
+	position:relative;
+	background-color:blue;
+    border: 1px solid white;
+    height:75px;
+    width:190px;
+    left:655px;
+    top:-320px;
+}
+#vennbodyfl {
+  position: absolute;
+  top: 20px;
+  left: 420px;
+  width: 880px;
+  height: 810px;
+  background-color: #000033;
+}
+
+</style>
 <body>
 <div id="content"><iframe name="content" src="terms/start.html" width="338px" height="290"></iframe></div>
 <div id="diploma">
@@ -62,8 +204,8 @@ function enterSubject(){
            
 </div>
 <div id="vennbodyfl">
-<h2 align="center">Refuting An Opponent's Incorrect Entailment<br></h2>
-<h3 align="center">Step 1. Enter Opponent's Incorrect Entailment<br>(for instance, outer value 'form', inner value 'existent')</h2>
+<h2 align="center">How Absurd Consequences Flow From Wrong Pervasions<br></h2>
+<h3 align="center">Step 1. Enter Opponent's Incorrect Pervasion<br>(for instance, outer value 'form', inner value 'existent')</h2>
 
 <div class="static3">
 
@@ -80,26 +222,26 @@ function enterSubject(){
 
 <div class="circlebigfl"></div>
 <div class="circlesmallfl"></div>
-<div class="outsidefl"><p><span id='outerText'></span> </p> </div>
-<div class="insidefl"><p><span id='innerText'></span> </p></div>
+<div class="outsidefl"><p class="TPwhite"><span id='outerText'></span> </p> </div>
+<div class="insidefl"><p class="TPwhite"><span id='innerText'></span> </p></div>
 
 
 </div>
 
 <div class="static4" id='reveal'>
 
-<h3 align="center">Step 2. Fling Absurd Consequence of Incorrect Entailment:<br>
+<h3 align="center">Step 2. Fling Absurd Consequence Flowing From Incorrect Pervasion:<br>
 assert a subject that is [<span id='innerText3'></span>] but is not [<span id='outerText3'></span>].</h2>
 
 <div class="consequencefl">
 <input type='text' id='subjectInput' value='' />
 <input type='button' onclick='enterSubject()' value="Submit Subject" />
 
-<div class="subjectfl"><p><span id='subjectText'></span> </p></div>
+<div class="subjectfl"><p class="TPwhite"><span id='subjectText'></span> </p></div>
 <div class="isafl"><p class="T31">IS</p></div>
-<div id='newhide' class="predicate"><p><span id='outerText2'></span> </p></div>
+<div id='newhide' class="predicate"><p class="TPwhite"><span id='outerText2'></span> </p></div>
 <div class="becausefl"><p class="T31">BECAUSE<BR>IT IS</p></div>
-<div class="reasonfl"><p><span id='innerText2'></span> </p></div>
+<div class="reasonfl"><p class="TPwhite"><span id='innerText2'></span> </p></div>
 
 </div>
 
