@@ -32,42 +32,45 @@ function enterSubject(){
 }
 p.TPblack {
   color: black;
-  font-size: 18pt;
+  font-size: 20pt;
 }
 p.TPwhite {
   color: white;
-  font-size: 18pt;
+  font-size: 20pt;
 }
 div.static {
   position: relative;
   left: 80px;
   height: 400px;
 }
-
-div.static2 {
+div.reasonEstablished {
   position: relative;
   left: 0px;
   height: 500px;
   top: 250px;
-  width:850px;
-  border:none;
+  width:600px;
+  border: 0px solid pink;
 }
-
-div.static3 {
-  position: relative;
-  left: 0px;
-  height: 400px;
-}
-
-div.static4 {
-  position: relative;
-  left: 0px;
+div.forwardPervasion {
+  position: absolute;
+  left: 625px;
   height: 500px;
+  top: 280px;
+  width:600px;
+  border: 0px solid green;
+}
+div.reversePervasion {
+  position: absolute;
+  left: 1250px;
+  height: 500px;
+  top: 280px;
+  width:600px;
+  border: 0px solid red;
 }
 .inside {
 	position:relative;
     height:25px;
-    width:50px;
+    width:100px;
     left:225px;
     top:-312px;
     background-color:blue;
@@ -75,7 +78,7 @@ div.static4 {
 .outside {
 	position:relative;
     height:25px;
-    width:50px;
+    width:10px;
     left:225px;
     top:-420px;
     background-color:green;
@@ -90,7 +93,7 @@ div.static4 {
     -webkit-border-radius:50%;
     width:300px;
     left:100px;
-    top:20px;
+    top:60px;
 }
 .circlesmall {
 	position:relative;
@@ -102,22 +105,22 @@ div.static4 {
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     width:175px;
-    top:-180px;
+    top:-140px;
 }
 .insideRP {
 	position:relative;
     height:25px;
-    width:50px;
-    left:625px;
-    top:-910px;
+    width:100px;
+    left:225px;
+    top: -340px;
     background-color:green;
 }
 .outsideRP {
 	position:relative;
     height:25px;
-    width:50px;
-    left:625px;
-    top:-1000px;
+    width:100px;
+    left:225px;
+    top:-420px;
     background-color:blue;
 }
 .circlebigRP {
@@ -129,12 +132,12 @@ div.static4 {
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     width:300px;
-    left:500px;
-    top:-540px;
+    left:120px;
+    top: 60px;
 }
 .circlesmallRP {
 	position:relative;
-	left:564px;
+	left:180px;
     background-color:green;
     border:1px solid red;    
     height:175px;
@@ -142,59 +145,65 @@ div.static4 {
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     width:175px;
-    top:-760px;
+    top:-150px;
 }
 .consequence {
 	position:absolute;
 	background-color: Gray;
     height:200px;
-    width:978px;
-    left:0px;
-    top:75px;
+    width:1300px;
+    left:320px;
+    top:60px;
+    border: 1px solid Gray;
 }
 .subject {
 	position:relative;
     background-color: Gray;
     height:75px;
-    width:250px;
+    width:300px;
     left:15px;
-    top:40px;
+    top:28px;
     border:none;
+    border: 1px solid Gray;
 }
 .isa {
 	position:relative;
 	background-color: Gray;
     height:75px;
     width:30px;
-    left:240px;
+    left:340px;
     top:-40px;
     border:none;
+    border: 1px solid Gray;    
 }
 .predicate {
 	position:relative;
 	background-color:gray;
     height:75px;
-    width:200px;
-    left:335px;
-    top:-160px;
+    width:300px;
+    left:385px;
+    top:-120px;
     border:none;
+    border: 1px solid gray;
 }
 .because {
 	position:relative;
 	background-color: gray;
     height:90px;
-    width:40px;
-    left:555px;
-    top:-260px;
+    width:160px;
+    left:700px;
+    top:-190px;
+    border: 1px solid gray;
 }
 .reason {
 	position:relative;
 	background-color:gray;
     height:75px;
-    width:190px;
-    left:675px;
-    top:-360px;
+    width:420px;
+    left:875px;
+    top:-290px;
     border:none;
+    border: 1px solid gray;
 }
 #diploma {
   position: absolute;
@@ -210,54 +219,21 @@ div.static4 {
   left: 60px;
   width: 340px;
   height: 290px;
+  border: 1px solid white;
 }
 
 #vennbody {
   position: absolute;
   top: 20px;
-  left: 420px;
-  width: 880px;
-  height: 810px;
+  left: 40px;
+  width: 2000px;
+  height: 900px;
   background-color: #000033;
+  border: 1px solid white;
 }
 
 </style>
 <body>
-<div id="content"><iframe name="content" src="terms/start.html" width="338px" height="290"></iframe></div>
-<div id="diploma">
-           <ul>
-                <li><a href="existent.html" target="content"> existent </a></li>
-
-                <li><a href="terms/object-knowledge.html" target="content"> object of knowledge </a></li>
-                <li><a href="terms/established-base.html" target="content"> established base </a></li>
-                <li><a href="terms/permanent.html" target="content"> permanent phenomenon </a></li>
-                <li><a href="terms/impermanent.html" target="content"> impermanent phenomenon</a></li>
-                <li><a href="terms/thing.html" target="content"> functioning thing </a></li>
-                <li><a href="terms/form.html" target="content"> form </a></li>
-                <li><a href="terms/matter.html" target="content"> matter </a></li>
-                <li><a href="terms/tangible.html" target="content"> tangible object </a></li>               
-                <li><a href="terms/earth.html" target="content"> earth </a></li>
-                <li><a href="terms/fire.html" target="content"> fire </a></li>
-                <li><a href="terms/water.html" target="content"> water </a></li>
-                <li><a href="terms/wind.html" target="content"> wind </a></li>
-                
-                
-                <li><a href="terms/consciousness.html" target="content"> consciousness </a></li>
-
-                <li><a href="terms/comp-factors.html" target="content"> non-associated compositional factor </a></li>
-                
-                <li><a href="terms/spec-char.html" target="content"> specifically-characterized phenomena </a></li>
-                <li><a href="terms/gen-char.html" target="content"> generally-characterized phenomena </a></li>                
-                
-                
-                <li><a href="terms/same.html" target="content"> phenomena that are same </a></li>
-                <li><a href="terms/different.html" target="content"> phenomena that are different </a></li>
-                <li><a href="terms/valid.html" target="content"> valid cognition </a></li>
-                
-           </ul>
-     <p><a href="index.html">Back home</a></p>      
-           
-</div>
 <div id="vennbody">
 <h2 align="center">Analyzing a Syllogism: The Three Modes of a Correct Reason<br></h2>
 
@@ -265,7 +241,7 @@ div.static4 {
 <div class="static">
 	
 	
-<p align="left">Step 1: Enter elements of syllogism: subject, predicate, and reason<br>(for instance, "sound", "impermanent", and "product")</p>
+<p align="center">Enter the three basic elements of a syllogism: the subject (chos can), the predicate to be proven (bsgrub bya'i chos), and the reason (rtags). For example, "Sound" is "Impermanent" because it is "Product".</p>
 
 <div class="consequence">
 <input type='text' id='subjectInput' value='' />
@@ -279,32 +255,39 @@ div.static4 {
 <div class="subject"><p class="TPblack"><span id='subjectText'></span> </p></div>
 <div class="isa"><p class="T31">IS</p></div>
 <div id='newhide' class="predicate"><p  class="TPblack"><span id='predicateText'></span> </p></div>
-<div class="because"><p class="T31">BECAUSE<BR>IT IS</p></div>
+<div class="because"><p class="T31">BECAUSE IT IS</p></div>
 <div class="reason"><p class="TPblack"><span id='reasonText'></span> </p></div>
 
+</div>
+
+<div class="reasonEstablished">
+<p align="left">Step 1. Is the Reason a Quality of the Subject?</p> 
+<p><br><br><br<br><br><brz</p>
+<p  class="TPwhite" align="left">The subject, [<span id='subjectText2' style="color:white" ></span>] is [<span id='reasonText2'></span>]. </p> 
+
+</div>
+
+<div class="forwardPervasion" id='reveal'>
+
+<p align="left">Step 2: Is the Forward Pervasion Valid?</p>
+<div class="circlebig"></div>
+<div class="circlesmall"></div>
+<div class="outside"><p class="TPwhite"><span id='predicateText2'></span> </p> </div>
+<div class="inside"><p class="TPwhite"><span id='reasonText3'></span> </p></div>
 </div>
 
 
 
 
-<div class="static2" id='reveal'>
-<p align="left">Step 2. Ascertain that the Reason is a Quality of the Subject:</p> 
+<div class="reversePervasion" id='reveal'>
 
-<p  class="TPwhite" align="center">The subject, [<span id='subjectText2' style="color:white" ></span>] is [<span id='reasonText2'></span>]. </p> 
-
-
-<p align="left">Step 3: Determine whether the Forward and Reverse Pervasions are Valid:</p>
-<div class="circlebig">Forward</div>
-<div class="circlesmall"></div>
-<div class="outside"><p class="TPwhite"><span id='predicateText2'></span> </p> </div>
-<div class="inside"><p class="TPwhite"><span id='reasonText3'></span> </p></div>
-
-<div class="circlebigRP">Reverse</div>
+<p align="left">Step 3: Is the Reverse Pervasion Valid?</p>
+<div class="circlebigRP"></div>
 <div class="circlesmallRP"></div>
 <div class="outsideRP"><p class="TPwhite">NOT <span id='reasonText4'></span> </p> </div>
 <div class="insideRP"><p class="TPwhite">NOT <span id='predicateText3'></span> </p></div>
 
-
+<p align="center"><a href="index.html">Back</a></p> 
 
 </div>
 

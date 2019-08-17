@@ -1,0 +1,283 @@
+/*
+CSS for index.html
+*/
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  color: LightGray;
+  background-color: #000033;
+  line-height: 125%;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  background-color: #000033;
+  color: Yellow;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  padding-left: 0em;
+  margin: 0;
+  line-height: 60%;
+}
+
+h2 {
+  color: Yellow;
+  padding-top: 0;
+  padding-bottom: .2em;
+  padding-left: 0em;
+  margin: 0;
+  line-height: 100%;
+  background-color: #000033;
+}
+
+h3 {
+  color: Yellow;
+  font-size: 100%;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-right: 5%;
+  line-height: 120%;
+}
+
+ul {
+  padding-left: 1em;
+}
+a {
+	color: #FFFFCC;
+}
+a:hover {
+	color: #FFFFCC;
+	text-decoration: underline;
+}
+a.white {
+	color: white;
+}
+
+li {
+  font-size: normal;
+  color:  #FFFFCC;
+  padding-left: 0em;
+}
+p {
+  color: #FFFFCC;
+}
+
+p.yellow {
+  color: Yellow;
+}
+
+.T31 { font-size:14pt; color:black; }
+
+/*
+CSS div defs
+*/
+
+
+#mainbody {
+  position: absolute;
+  top: 200px;
+  left: 420px;
+  width: 880px;
+  height: 810px;
+  background-color: #000033;
+}
+div.static {
+  position: relative;
+  left: 80px;
+  height: 400px;
+}
+
+div.static2 {
+  position: relative;
+  left: 0px;
+  height: 500px;
+  top: 250px;
+  border:1px solid white;
+}
+
+div.static3 {
+  position: relative;
+  left: 0px;
+  height: 400px;
+}
+
+div.static4 {
+  position: relative;
+  left: 0px;
+  height: 500px;
+}
+.inside {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:225px;
+    top:-312px;
+    background-color:blue;
+}
+.outside {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:225px;
+    top:-420px;
+    background-color:green;
+}
+.circlebig {
+	position:relative;
+    background-color:green;
+    border:1px solid red;    
+    height:300px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:300px;
+    left:100px;
+    top:20px;
+}
+.circlesmall {
+	position:relative;
+	left:164px;
+    background-color:blue;
+    border:1px solid red;    
+    height:175px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:175px;
+    top:-180px;
+}
+.insideRP {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:625px;
+    top:-910px;
+    background-color:green;
+}
+.outsideRP {
+	position:relative;
+    height:25px;
+    width:50px;
+    left:625px;
+    top:-1000px;
+    background-color:blue;
+}
+.circlebigRP {
+	position:relative;
+    background-color:blue;
+    border:1px solid red;    
+    height:300px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:300px;
+    left:500px;
+    top:-540px;
+}
+.circlesmallRP {
+	position:relative;
+	left:564px;
+    background-color:green;
+    border:1px solid red;    
+    height:175px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:175px;
+    top:-760px;
+}
+.consequence {
+	position:absolute;
+	background-color: Gray;
+    border: 3px solid #73AD21;
+    height:200px;
+    width:878px;
+    left:0px;
+    top:75px;
+}
+.subject {
+	position:relative;
+    background-color: #000033;
+    border: 3px solid #73AD21;
+    height:75px;
+    width:250px;
+    left:15px;
+    top:40px;
+
+}
+.isa {
+	position:relative;
+	background-color: Gray;
+    height:75px;
+    width:30px;
+    left:280px;
+    top:-40px;
+
+}
+.predicate {
+	position:relative;
+	background-color:green;
+    border: 3px solid #73AD21;
+    height:75px;
+    width:200px;
+    left:335px;
+    top:-130px;
+        border: 1px solid white;
+}
+.because {
+	position:relative;
+	background-color: Gray;
+    height:90px;
+    width:40px;
+    left:555px;
+    top:-200px;
+}
+.reason {
+	position:relative;
+	background-color:blue;
+    border: 1px solid white;
+    height:75px;
+    width:190px;
+    left:655px;
+    top:-320px;
+}
+#diploma {
+  position: absolute;
+  top: 320px;
+  left: 60px;
+  width: 340px;
+  height: 510px;
+}
+
+#content {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  width: 340px;
+  height: 290px;
+}
+
+#vennbody {
+  position: absolute;
+  top: 20px;
+  left: 420px;
+  width: 880px;
+  height: 810px;
+  background-color: #000033;
+}
+
+
+
+/*
+CSS for fling.html
+*/
+
+
+
+
+
+
+
