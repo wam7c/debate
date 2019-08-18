@@ -12,6 +12,13 @@ function enterLeft(){
     document.getElementById('leftText2').innerHTML = formInput;
     document.getElementById('leftText3').innerHTML = formInput;
     document.getElementById('leftText4').innerHTML = formInput;
+   	document.getElementById('leftText5').innerHTML = formInput;
+    document.getElementById('leftText6').innerHTML = formInput;
+    document.getElementById('leftText7').innerHTML = formInput;
+    document.getElementById('leftText8').innerHTML = formInput;
+    document.getElementById('leftText9').innerHTML = formInput;
+    document.getElementById('leftText10').innerHTML = formInput;
+    document.getElementById('leftText11').innerHTML = formInput;
 }
 function enterRight(){
 	var formInput = document.getElementById('rightInput').value;
@@ -19,6 +26,13 @@ function enterRight(){
     document.getElementById('rightText2').innerHTML = formInput;
     document.getElementById('rightText3').innerHTML = formInput;
     document.getElementById('rightText4').innerHTML = formInput;
+	document.getElementById('rightText5').innerHTML = formInput;
+    document.getElementById('rightText6').innerHTML = formInput;
+    document.getElementById('rightText7').innerHTML = formInput;
+    document.getElementById('rightText8').innerHTML = formInput;
+	document.getElementById('rightText9').innerHTML = formInput;
+    document.getElementById('rightText10').innerHTML = formInput;
+    document.getElementById('rightText11').innerHTML = formInput;
 }
 function enterNeither(){
 	var formInput = document.getElementById('neitherInput').value;
@@ -44,11 +58,18 @@ p.TPblack {
   color: black;
   font-size: 18pt;
 }
+#PerdueQuote {
+  position: absolute;
+  top: 280px;
+  left: 80px;
+  width: 540px;
+  height: 810px;
+}
 #mutualinc {
   position: absolute;
   top: 0px;
-  left: 460px;
-  width: 1420px;
+  left: 860px;
+  width: 1220px;
   height: 1080px;
   background-color:green;
 }
@@ -161,8 +182,25 @@ p.TPblack {
 }
 </style>
 <body>
+
+<div id="PerdueQuote">
+<h2>The Eight Approaches to Pervasion:</h2>
+<ul>
+<li style="font-size:22px">Whatever is [ <span id='leftText2'></span> ] is necessarily [ <span id='rightText2'></span> ].</li><br>
+<li style="font-size:22px">Whatever is [ <span id='rightText3'></span> ] is necessarily [ <span id='leftText3'></span> ].</li><br>
+<li style="font-size:22px">Whatever is not [ <span id='leftText4'></span> ] is necessarily not [ <span id='rightText4'></span> ].</li><br>
+<li style="font-size:22px">Whatever is not [ <span id='rightText5'></span> ] is necessarily not [ <span id='leftText5'></span> ].</li><br>
+
+<li style="font-size:22px">If [ <span id='leftText6'></span> ] exists, then [ <span id='rightText6'></span> ] necessarily exists.</li><br>
+<li style="font-size:22px">If [ <span id='rightText7'></span> ] exists, then [ <span id='leftText7'></span> ] necessarily exists.</li><br>
+<li style="font-size:22px">If [ <span id='leftText8'></span> ] does not exist, then [ <span id='rightText8'></span> ] necessarily does not exist.</li><br>
+<li style="font-size:22px">If [ <span id='rightText9'></span> ] does not exist, then [ <span id='leftText9'></span> ] necessarily does not exist.</li>
+</ul>
+
+</div>
+	
 <div id="mutualinc">
-<h2 align="left"><br><br>Mutually Inclusive: The Eight Doors of Pervasion<br></h2>
+<h2 align="left"><br><br>Mutually Inclusive: The Eight Approaches to Pervasion<br></h2>
 <div id="circleLEFT"></div>
 <div id="circleRIGHT"></div>
 <div id="neitherFP"><p class="TPblack" align="center"><span id='neitherText'></span> </p></div>
@@ -182,7 +220,6 @@ p.TPblack {
 <div id="submitneitherFP"><input type='text' id='neitherInput' value='' />
 <input type='button' onclick='enterNeither()' value='Neither Left Nor Right'/>
 </div>
-<div id="nocommonlocus"><p align="center" class="TPblack"> Everything that is [ <span id='leftText2'></span> ] is also [ <span id='rightText2'></span> ]. <br></p></div>
 <p align="left"><a href="index.html">Back</a></p></div>
 </body></html>
 

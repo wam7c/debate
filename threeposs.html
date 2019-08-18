@@ -40,10 +40,17 @@ p.TPwhite {
   color: white;
   font-size: 24pt;
 }
+#PerdueQuote {
+  position: absolute;
+  top: 280px;
+  left: 80px;
+  width: 540px;
+  height: 810px;
+}
 #threeposs {
   position: absolute;
   top: 0px;
-  left: 460px;
+  left: 660px;
   width: 1420px;
   height: 1080px;
   background-color: #000033;
@@ -121,7 +128,7 @@ p.TPwhite {
 #pervasionTP {
   position: absolute;
   top: 880px;
-  left: 520px;
+  left: 720px;
   width: 880px;
   height: 168px;
   background-color: #7BEBA4;
@@ -129,19 +136,23 @@ p.TPwhite {
 }
 </style>
 <body>
+<div id="PerdueQuote">
+<p align="center" style="font-size:22px; line-height: 1.8"><i>"Pervasion does not mean that the sign (the reason) <i>is</i> the predicate to be proven. Rather, the meaning of pervasion is that the predicate to be proven encompasses the sign and is invariably associated with it."</i><br><br>Daniel Perdue, <i>Debate in Tibetan Buddhism</i></p>
+</div>
+		
 <div id="threeposs">
-<h2 align="left"><br><br>Three Possibilities: Determining Correct and Incorrect Pervasions<br></h2>
+<h2 align="left"><br><br>Three Possibilities Demonstrating Pervasion<br></h2>
 <div id="circleBTP"></div>
 <div id="circleSTP"></div>
 <div id="neitherTP"><p class="TPwhite" align="center"><span id='neitherText'></span> </p></div>
 <div id="outsideTP"><p class="TPwhite" align="center"><span id='outerText'></span> </p></div>
 <div id="insideTP"><p class="TPwhite" align="center" s><span id='innerText'></span></p></div>
 <div id="submitoutTP"><input type='text' id='outInput' value='' />
-<input type='button' onclick='enterOuter()' value='Outer Set'/>	
+<input type='button' onclick='enterOuter()' value='Outer'/>	
 </div>
 
 <div id="submitinnerTP"><input type='text' id='innerInput' value='' />
-<input type='button' onclick='enterInner()' value='Inner Set'/>
+<input type='button' onclick='enterInner()' value='Inner'/>
 </div>
 </div>
 
